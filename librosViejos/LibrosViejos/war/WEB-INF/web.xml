@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+    
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>LibrosViejos.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>ServiceAnuncios</servlet-name>
+  	<servlet-class>com.fer.librosViejos.server.services.anuncios.ServiceAnunciosImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServiceAnuncios</servlet-name>
+  	<url-pattern>/librosviejos/ServiceAnuncios</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>FBConnect</servlet-name>
+  	<servlet-class>com.fer.librosViejos.server.fb.connect.OAuthRedirect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FBConnect</servlet-name>
+  	<url-pattern>/fbConnect</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  	<servlet-name>FbRedirect</servlet-name>
+  	<servlet-class>com.fer.librosViejos.server.fb.connect.RedirectUri</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FbRedirect</servlet-name>
+  	<url-pattern>/fbRedirect</url-pattern>
+  </servlet-mapping>
+
+  
+
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.fer.librosViejos.server.services.anuncios.ServiceAnunciosImpl</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value/>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>

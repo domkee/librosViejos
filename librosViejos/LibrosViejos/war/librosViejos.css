@@ -1,0 +1,220 @@
+/*
+
+General CSS
+
+*/
+html
+{
+	height: 100%;
+}
+
+@font-face
+{
+	font-family: "myriad";
+	src: url("fonts/MYRIADPRO-BOLDCOND.OTF");
+}
+
+body
+{
+	font-family: myriad;
+	font-size: 18px;
+	margin: 0px;
+	height: 100%;
+}
+
+#mainPanel
+{
+	background-color: #F0F0F0;
+	color: #121212;
+	width: 800px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	padding-top: 60px;
+}
+
+.paddingBottom
+{
+	padding-bottom: 20px;
+}
+
+.italic
+{
+	font-style: italic;
+	font-size: 16px;
+	color: #26ADE4;
+}
+
+/*
+
+Nav Bar
+
+*/
+
+.navBar
+{
+	height:38px;
+	background: #26ADE4;
+	width:100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border-bottom: 2px solid #1C82AB;
+}
+
+.navBarLinkLeft,.navBarLinkRight
+{
+	text-decoration: none;
+	font-size: 30px;
+	color: #FFFFFF;
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+	cursor: pointer;
+	
+}
+
+.navBarLinkLeft:HOVER,.navBarLinkRight:HOVER
+{
+	color: #FF530D;
+}
+
+.navBarLinkRight
+{
+	float:right;
+}
+
+
+.txtSearch
+{
+	float: left;
+	margin-top:1px;
+	margin-right:-38px;
+	margin-left:10px;
+	width: 40%;
+	height: 30px;
+	border: 2px solid #26ADE4;
+	border-radius:15px;
+	padding-left:20px;
+}
+
+.navBarSearch
+{
+	margin-top:5px;
+	float: left;
+	background-color: #FFFFFF;
+	height:30px;
+	cursor:pointer;
+	border-radius:15px;
+}
+.navBarSearch:HOVER
+{
+	background-color: #F0F0F0;
+}
+
+/*
+
+Pagina Buscar
+
+*/
+
+.titleSearch
+{
+	font-size: 30px;
+	color: #1C82AB;
+}
+
+
+.txtSearch:HOVER
+{
+	border: 2px solid #FF530D;
+}
+
+.btnSearch
+{
+	padding: 5px;
+	float: left;
+	background-color: #26ADE4;	
+	border-radius:4px;
+	color: #F0F0F0;
+	cursor: pointer;
+}
+.btnSearch:HOVER
+{
+	background-color: #FF530D;
+}
+
+/*
+
+Pagina Anuncios
+
+*/
+
+.textBox
+{
+	float: left;
+	margin-right:10px;
+	height: 26px;
+	border: 2px solid #26ADE4;
+	border-radius:6px;
+	width:100%;
+	font-family: myriad;
+	padding-left: 10px;
+}
+
+.textBox:HOVER
+{
+	border: 2px solid #FF530D;
+}
+
+/*
+
+Search Results
+
+*/
+
+.searchResult
+{
+	padding: 7px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	margin: 3px;
+	width: 100%;
+}
+
+.searchResultNombre {
+	float:left;
+}
+.floatLeft {
+	float:left;
+}
+.searchResultImg {
+	cursor:pointer;
+}
+
+.searchResultName
+{
+	color:#26ADE4;
+	cursor:pointer;
+}
+.searchResultDescription
+{
+}
+.searchResultPrice
+{
+	font-style:italic;
+	color:#FF530D;
+	text-align: right;
+}
+.searchResultOwner
+{
+	font-size:14px;
+	text-align: right;
+	
+}
+
+
+
+
